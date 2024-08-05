@@ -1,0 +1,76 @@
+/* styles.css */
+.custom-dropdown {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: 66%;
+    border-radius: 23px;
+    color: white;
+    background-color: #234F8E;
+    margin-top: 17px;
+    padding: 2%;
+  }
+  
+  .dropdown-header {
+    font-size: smaller;
+    cursor: pointer;
+    /* padding: 8px; */
+    
+    border-radius: 4px;
+   
+    /* justify-content: space-between; */
+    align-items: start; 
+  }
+  
+  
+  
+  .arrow {
+    margin-right: 16px;
+    float: right;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    /* margin-left: 54%; */
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .arrow.up {
+    transform: rotate(-135deg);
+  }
+  
+  .arrow.down {
+    transform: rotate(45deg);
+  }
+  
+  .options {
+    font-size: smaller;
+    background: aliceblue;
+    color: black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  .option {
+    cursor: pointer;
+    padding: 8px;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .option:hover {
+    background-color: #3c65c0;
+  }
+  
+  .option.selected {
+    background-color: rgb(139, 177, 209);
+    color: white;
+  }
+  

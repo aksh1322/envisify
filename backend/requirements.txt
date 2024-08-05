@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+python-multipart
+boto3
+gunicorn
+uuid
+python-dotenv
+celery
+redis
+sagemaker
+flower
+pydantic[email]
+openai==0.28.0

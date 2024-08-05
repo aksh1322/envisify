@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-image: url('/bg.png'); 
+  /* Replace 'path/to/your/image.jpg' with the actual path to your image file */
+  background-size: cover; /* This property ensures that the background image covers the entire body */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-attachment: fixed; /* Fixes the background image so that it doesn't scroll with the content */
+  /* You can add more CSS properties to customize the background, such as background-position, background-color, etc. */
+}
+#logo{
+  display: block;
+  margin: auto;
+  margin-top: 29px;
+  /* Ensure the logo takes up the full width of its container */
+  max-width: 400px; /* Set a maximum width for the logo */
+  height: auto; 
+  height: 100%;/* Maintain aspect ratio */
+  width: 150px; 
+}
+#content-div {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 22px;
+  text-align: center;
+  display: block;
+  margin: auto;
+  height: 551px;
+  margin-top: 17px;
+  max-width: 563px;
+  max-height: 600px;
+}
+#model_heading{
+  color:#115add;
+}
+
+/* #select-tag{
+  border-radius: 10px;
+  width: 71%;
+  display: flex;
+  margin: auto;
+  margin-top: 16px;
+  background: #477de7;
+  height: 25px;
+  color: white;
+} */
+
+
+
+.textarea{
+  border: none;
+  padding: 15px;
+  text-align: center;
+  border-radius: 20px;
+  /* border: 2px solid rgb(202, 218, 231); */
+  background: #E0EBFD;
+  margin-top: 19px;
+  width: 434px;
+  
+  /* color: black; */
+  font-size: 12px;
+  resize: none;
+  margin-left: 7.5%;
+   /* background: aliceblue;; */
+}
+.upload-btn{
+  padding: 6px 1px;
+  margin-top: 16px;
+  border-radius: 19px;
+  width: 124px;
+  color: white;
+  border: none;
+  background-color: #2CDEA4;
+
+}
+
+
+.loader {
+  position: absolute;
+  top: 168px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.jimu-primary-loading:before,
+.jimu-primary-loading:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+
+.jimu-primary-loading:before {
+  left: -19.992px;
+}
+
+.jimu-primary-loading:after {
+  left: 19.992px;
+  -webkit-animation-delay: 0.32s !important;
+  animation-delay: 0.32s !important;
+}
+
+.jimu-primary-loading:before,
+.jimu-primary-loading:after,
+.jimu-primary-loading {
+  background: #076fe5;
+  -webkit-animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+  animation: loading-keys-app-loading 0.8s infinite ease-in-out;
+  width: 13.6px;
+  height: 32px;
+}
+
+.jimu-primary-loading {
+  text-indent: -9999em;
+  margin: auto;
+  position: absolute;
+  right: calc(50% - 6.8px);
+  top: calc(50% - 16px);
+  -webkit-animation-delay: 0.16s !important;
+  animation-delay: 0.16s !important;
+}
+@-webkit-keyframes loading-keys-app-loading {
+
+  0%,
+  80%,
+  100% {
+    opacity: .75;
+    box-shadow: 0 0 #076fe5;
+    height: 32px;
+  }
+
+  40% {
+    opacity: 1;
+    box-shadow: 0 -8px #076fe5;
+    height: 40px;
+  }
+}
+
+@keyframes loading-keys-app-loading {
+
+  0%,
+  80%,
+  100% {
+    opacity: .75;
+    box-shadow: 0 0 #076fe5;
+    height: 32px;
+  }
+
+  40% {
+    opacity: 1;
+    box-shadow: 0 -8px #076fe5;
+    height: 40px;
+  }
+}
+.download-btn{
+  border: none;
+    margin-top: 7%;
+    background-color: #115add;
+    border-radius: 24px;
+    height: 33px;
+    width: 111px;
+    color: white;
+}
+#csvFile{
+  left: -6%;
+  top: 35px;
+    position: relative;
+}
+
+.file-input-label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.upload-icon {
+  width: 20px;  /* Adjust the icon size as needed */
+  height: 20px;
+  margin-left: 5px;  /* Adjust the spacing between text and icon */
+}
+@media screen and (max-width: 768px) {
+  #logo {
+    max-width: 80%;
+  }
+
+  #content-div {
+    max-width: 90%;
+  }
+
+  .textarea {
+    width: 90%;
+  }
+
+  .upload-btn {
+    width: 60%;
+  }
+}

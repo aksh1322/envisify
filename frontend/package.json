@@ -1,0 +1,38 @@
+{
+  "name": "file-upload",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@types/multer": "^1.4.8",
+    "axios": "^1.6.5",
+    "body-parser": "^1.20.2",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fast-csv": "^5.0.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "next": "^13.5.4",
+    "openai": "^4.11.1",
+    "papaparse": "^5.4.1",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.11.20",
+    "@types/papaparse": "^5.3.9",
+    "@types/react": "18.2.57",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.4",
+    "typescript": "5.3.3"
+  }
+}
